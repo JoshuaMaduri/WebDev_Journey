@@ -3,58 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Maduri</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Joshua Maduri - Development Expert</title>
 </head>
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud">
-        <h1>I'm Josh</h1>
-        <h2>a programmer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
-        <img src="images/mountain.png" alt="mountain">
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-          <img class="profile-pic" src="https://media.licdn.com/dms/image/C5603AQGosevavsIuWQ/profile-displayphoto-shrink_400_400/0/1630879262120?e=1683763200&v=beta&t=92VL_EkeC17IpcORM4ei0FlzM8SfWUrEqj6If5Fi6gE" alt="profile-pic">
-          <h2>Hello.</h2>
-          <p>I'm a programmer based in Toronto, Canada who likes to build websites, webapps, programs, and cloud solutions. I have a passion for programming and love to learn new languages and technologies and build solutions that can help people.</p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="first-skill-row-img" src="images/settings.png" alt="operations">
-                <h3>Soft Skills</h3>
-                <p>Site Reliability Engineering; DevOps; End-to-End Project/Project Management; Problem Solving; Solution Development; System Architecture Design; IT Management; Agile Methodology; Staff Management & Team Development; Business Needs Analysis</p>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#Home" class="nav-link active">Home</a></li>
+                <li><a href="#Projects" class="nav-link">Projects</a></li>
+                <li><a href="#Skills" class="nav-link">Skills</a></li>
+                <li><a href="#Experience" class="nav-link">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-intro">
+                <h2 class="home-intro-name">
+                    Hello I'm 
+                    <br>
+                    <span>Joshua <br>Maduri</span>
+                </h2>
+                <div class="home-intro-animated-text">
+                    <h3>I build websites</h3>
+                    <h3>I build backends</h3>
+                    <h3>I build apps</h3>
+                    <h3>I build cloud solutions</h3>
+                    <h3>I build automations</h3>
+                </div>
+                <a href="#"><button class="bn632-hover bn26">See my Blog</button></a>
             </div>
-            <div class="skill-row">
-                <img class="second-skill-row-img" src="images/app-development.png" alt="web-development">
-                <h3>Technical Skills</h3>
-                <p>Python (OOP), Bash/ZSH/linux scripting, AWS Cloud, Front-End Development(HTML/CSS/Javascript), App Development(Swift), SRE Tools(Ansible, Elasticsearch), Docker, Kubernetes, Git, Teraform</p>
-                
+            <div class="home-job-status">
+                <img src="images/profile-pic.jpeg" alt="Profile-Image" id="profile-image">
+                <div class="home-social-links">
+                    <a href="https://www.linkedin.com/in/jamaduri-it/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Joshi669"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01ba971cd79401ca10"><i class="fa-brands fa-upwork"></i></a>
+                </div>
+                <a href="#"><button class="bn632-hover bn26">Book me</button></a>
             </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Like what I'm working! Let's collaborate! </h3>
-          <p>If you like coding as much as I do or have an idea, I'd love to code it</p>
-          <a class="btn" href="josh@thetraveleingcoder.com">CONTACT ME</a>
-        </div>
-    </div>
-      
-      
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/jamaduri-it/">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/Joshi669">Github</a>
-        <a class="footer-link" href="comingsoon.html">Blog</a>
-        <p class="copyright">© Joshua Maduri 2023</p>
-    </div>
-      
+        </section>
+        <section class="skills-page"></section>
+        <section class="projects-page"></section>
+        <section class="blog-page"></section>
+        <footer>
+            <p>© 2021 Joshua Maduri | <a href="mailto:jmaduri@hotmail.com"></a></p>
+        </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/84ce35745e.js" crossorigin="anonymous"></script>
+    <script type="module" src="js/scripts.js"></script>
 </body>
 </html>
