@@ -75,7 +75,7 @@ header .navigation a {
 }
 
 section {
-    padding: 80px 20px;
+    padding: 100px 30px;
 }
 
 header .navigation a:hover{
@@ -88,6 +88,7 @@ header .navigation a:hover{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--navy-color);
     background-image: var(--main-background-image);
