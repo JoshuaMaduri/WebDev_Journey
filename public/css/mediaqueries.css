@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --navy-color: #112d4e;
+    --blue-color: #3F72AF;
+    --lightblue-color: #DBE2EF;
+    --white-color: #F9f7f7;
+    --white-color-glass: rgba(249,247,247,0.5);
+    --black-color: rgb(85,85,85);
+    --main-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 110vh;
+}
+
+.navbar{
+    z-index: 999;
+    position: fixed;
+    background-color: var(--navy-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 15px 200px;;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar{
+        padding: 12px 20px;
+    }
+}
+
+.nav-brand {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-button {
+        position: absolute;
+        background: url(../static/icons8-menu-100.svg);
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+}
+
+.navbar a {
+    cursor: pointer;
+}
+
+.navbar .navigation {
+    position: relative;
+}
+
+.navbar .navigation ul {
+    list-style-type: none;
+}
+
+header .navigation li {
+    float: left;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+
+header .navigation a {
+    color: var(--white-color);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+header .navigation a:hover{
+    color: #3a6cf4;
+  }
+
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--navy-color);
+    background-image: var(--main-background-image);
+}
+
+.home .home-intro{
+    max-width: 800px;
+}
+
+.home-intro-name {
+    color: var(--white-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.home-intro-name span {
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.home-intro-animated-text {
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.home-intro-animated-text h3:nth-child(1){
+    animation: text-move 20s infinite;
+}
+
+.home-intro-animated-text h3 {
+    color: var(--lightblue-color);
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.home-social-links {
+    margin-top: 25px;
+}
+.home-social-links a {
+    color: var(--white-color);
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+
+@keyframes text-move {
+    0% {
+        margin-top: 0;
+    }
+
+    12.5% {
+        margin-top: -70px;
+    }
+
+    25% {
+        margin-top: -140px;
+    }
+    37.5% {
+        margin-top: -210px;
+    }
+    50% {
+        margin-top: -280px;
+    }
+    62.5% {
+        margin-top: -210px;
+    }
+    75% {
+        margin-top: -140px;
+    }
+    87.5% {
+        margin-top: -70px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.home-job-status h3 {
+    margin-top: 30px;
+    color: var(--white-color);
+    font-size: 2em;
+    font-weight: 400;
+
+}
+
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 30px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+.bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+    outline: none;
+}
+
+.bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.home-job-status #profile-image {
+    border: var(--white-color) solid 3px;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar-button.active {
+        z-index: 999;
+        background: url(../static/icons8-close-100.svg) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3 ease; 
+    }
+    .navigation.active {
+        z-index: 888;
+        position: fixed;
+        background: var(--white-color);
+        top: 0;
+        right: 0;
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1, 1, 1 / 15%);
+        transition: 1 ease;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation li {
+        float: none;
+        padding: 10px 0;
+    }
+
+    header .navigation a {
+        color: #000;
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 0 20px;
+        border-radius: 20px;
+    }
+    header .navigation a:hover{
+        background: var(--blue-color);
+        color: var(--white-color);
+        transition: 0.3s ease;
+      }
+    .home .home-intro h2{
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+    
+    .home-intro-animated-text h3{
+        font-size: 1.2em;
+    }
+
+    .projects-page {
+        background-color: var(--white-color);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home-job-status{
+        display: none;
+    }
+}
+
+/* Projects Section */
+section {
+    padding: 100px 30px;
+}
+#section-title {
+    text-align: center;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: column;
+}
