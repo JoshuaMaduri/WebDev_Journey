@@ -317,9 +317,28 @@ section {
 }
 #section-title {
     text-align: center;
+    padding: 20px 20px;
 }
 
-.project-cards{
+.project-list{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
+
+.project {
+    max-width: 58rem;
+    min-height: 21rem;
+    background-color: rgb(249 250 251 / 85%);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: rgba(60, 64, 67, 0.32) 0px 15px 30px, rgba(60, 64, 67,  0.18) 0px -15px 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover{
+    background-color: var(--lightblue-color);
+}
+
