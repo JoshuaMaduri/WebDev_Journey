@@ -334,11 +334,19 @@ section {
     background-color: rgb(249 250 251 / 85%);
     border-radius: 10px;
     padding: 20px 30px;
-    box-shadow: rgba(60, 64, 67, 0.32) 0px 15px 30px, rgba(60, 64, 67,  0.18) 0px -15px 30px;
-    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*box-shadow: rgba(60, 64, 67, 0.32) 0px 15px 30px, rgba(60, 64, 67,  0.18) 0px -15px 30px;
+    transition: all 0.3s ease-in-out;*/
 }
 
 .project:hover{
     background-color: var(--lightblue-color);
+}
+
+#project-image{
+    width: 2rem;
+    height: 2rem;
 }
 

@@ -54,8 +54,18 @@
             <div class="project-list">
             <% projects_data.forEach(item => { %>
                 <div class="project">
-                    <h4><%= item.name %></h4>
-                    <p><%= item.description%></p>
+                    <div class="project-description">
+                        <h4><%= item.name %></h4>
+                        <p><%= item.description%></p>
+                        <p>Made with: 
+                        <% item.technology.forEach(tech => { %>
+                            <%- logo_data[tech] %>
+                        <%});%>
+                        </p>
+                    </div>
+                    <div class="project-preview">
+                        
+                    </div>
                     
                 </div>
                 <% }); %>
