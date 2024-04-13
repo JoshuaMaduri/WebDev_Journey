@@ -318,6 +318,8 @@ section {
 #section-title {
     text-align: center;
     padding: 20px 20px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .project-list{
@@ -329,24 +331,123 @@ section {
 }
 
 .project {
-    max-width: 58rem;
-    min-height: 21rem;
+    width: 58rem;
+    height: 21rem;
     background-color: rgb(249 250 251 / 85%);
     border-radius: 10px;
     padding: 20px 30px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /*box-shadow: rgba(60, 64, 67, 0.32) 0px 15px 30px, rgba(60, 64, 67,  0.18) 0px -15px 30px;
-    transition: all 0.3s ease-in-out;*/
+    gap: 2em;
+    overflow: hidden;
+    position: relative;
+    border-color: var(--lightblue-color);
+    border-width: 1px;
+    border-style: solid;
 }
-
 .project:hover{
     background-color: var(--lightblue-color);
 }
 
-#project-image{
+.project:hover .project-preview img{
+    transform: rotate(-5deg);
+}
+
+
+#project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.project-information{
+    width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#project-technologies-text{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    
+}
+
+.project-preview{
+    overflow: hidden;
+}
+
+.project-preview img{
+    position: absolute;
+    float: right;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.32) 0px 15px 30px, rgba(60, 64, 67,  0.18) 0px -15px 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+#project-technologies{
     width: 2rem;
     height: 2rem;
+}
+
+#project-description{
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+
+#project-githublink{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#project-githublink:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#project-sitelink{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*skills section*/
+
+.skills{
+    max-width: 58rem;
+    background-color: red;
+}
+
+.skills-list{
+    max-width: 58rem;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin: auto;
+}
+
+.skills-list img{
+    width: 8rem;
+    height: 8rem;
 }
 

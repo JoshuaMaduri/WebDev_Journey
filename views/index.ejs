@@ -54,17 +54,22 @@
             <div class="project-list">
             <% projects_data.forEach(item => { %>
                 <div class="project">
-                    <div class="project-description">
-                        <h4><%= item.name %></h4>
-                        <p><%= item.description%></p>
-                        <p>Made with: 
+                    <div class="project-information">
+                        <h4 id="project-title"><%= item.name %></h4>
+                        <p id="project-description"><%= item.description%></p>
+                        <p id="project-technologies-text">Made with: 
                         <% item.technology.forEach(tech => { %>
-                            <%- logo_data[tech] %>
+                            <img src='<%= logo_data[tech] %>' id='project-technologies'></img>
                         <%});%>
                         </p>
+                        <p>Status: <%= item.status %></p>
+                        <div class="buttons">
+                            <a href="<%= item.githubLink %>"><button id="project-githublink">Github <i class="fa-brands fa-github"></i></button></a>
+                            <a href="<%= item.activeLink %>"><button id="project-sitelink">Site Link</button></a>
+                        </div>
                     </div>
                     <div class="project-preview">
-                        
+                        <img src="<%= item.screenshot %>" id="project-preview-img"></img>
                     </div>
                     
                 </div>
@@ -72,11 +77,18 @@
             </div>
         </section>
 
-        <!-- <section class="skills-page"></section>
-        <section class="blog-page"></section> 
+        <section class="skills" id="Skills">
+            <h2 id="section-title">My Skills</h2>
+            <div class="skills-list">
+                <% for (const [key, value] of Object.entries(logo_data)) { %>
+                    <img src="<%=value;%>" id="skill-image"></img>
+                <% }; %>
+            </div>
+        </section>
+        <section class="experience" id="experience"></section> 
         <footer>
             <p>© 2021 Joshua Maduri | <a href="mailto:jmaduri@hotmail.com"></a></p>
-        </footer>-->
+        </footer>
     </main>
     <script src="https://kit.fontawesome.com/84ce35745e.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
