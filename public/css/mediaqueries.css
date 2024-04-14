@@ -430,24 +430,24 @@ section {
 
 /*skills section*/
 
-.skills{
-    max-width: 58rem;
-    background-color: red;
-}
-
 .skills-list{
     max-width: 58rem;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 4em;
     margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .skills-list img{
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
+    transition: all 0.3s ease-in-out;
 }
 
+.skills-list img:hover{
+    transform: scale(1.5);
+}
