@@ -427,6 +427,16 @@ section {
     cursor: pointer;
 }
 
+@media screen and (max-width:1000px) {
+    .project{
+        width: 25rem;
+        height: 30rem;
+    }
+    .project-preview{
+        display: none;
+    }
+}
+
 
 /*skills section*/
 
@@ -443,11 +453,18 @@ section {
 }
 
 .skills-list img{
-    width: 6rem;
-    height: 6rem;
+    max-width: 6rem;
+    max-height: 6rem;
     transition: all 0.3s ease-in-out;
 }
 
 .skills-list img:hover{
     transform: scale(1.5);
+}
+
+
+footer{
+    background-color: var(--navy-color);
+    color: white;
+    text-align: center;
 }
