@@ -239,8 +239,8 @@ header .navigation a:hover{
 .home-job-status #profile-image {
     border: var(--white-color) solid 3px;
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    height: auto;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -459,7 +459,7 @@ section {
 }
 
 .skills-list img:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 
