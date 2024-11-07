@@ -1,16 +1,22 @@
-// import { Navbar } from "./ui/homepage/navbar/navbar";
-import { Navbar } from "./(homepage)/navbar";
+import { Box } from "@mui/material";
 
 export default function Home() {
   return (
-    <main style={{
+    <Box sx={{
       maxWidth: '75vw',
+      height: '75vh',
       border: 'black 1px solid',
       margin: 'auto',
       marginTop: '1rem',
       padding: '5px'
     }}>
-      <Navbar/>
-    </main>
+      <Box>
+
+      </Box>
+
+      <Box>
+        
+      </Box>
+    </Box>
   );
 }
